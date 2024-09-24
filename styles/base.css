@@ -38,11 +38,13 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect for navigation links */
 nav ul li a:hover {
     background-color: #4450f1;
+    color: white; /* Change text color on hover */
     border-radius: 5px;
 }
 
@@ -60,6 +62,13 @@ main {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for card elements */
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
 
 /* Grid for cards */
@@ -70,15 +79,13 @@ main {
 }
 
 /* Section images */
-/* Adjust image size and alignment */
 .card img {
-    float: right; /* Aligns the image to the right of the content */
-    max-width: 150px; /* Make the image smaller */
-    margin-left: 20px; /* Adds space between the image and the text */
-    margin-bottom: 10px; /* Adds some space below the image */
+    float: right;
+    max-width: 150px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     border-radius: 8px;
 }
-
 
 /* Footer styles */
 footer {
@@ -119,10 +126,10 @@ footer p {
 .divider {
     border: none;
     border-top: 2px solid #ddd;
-    margin: 20px 0; /* Adjust spacing around the divider */
-    width: 100%; /* Full width of the card */
+    margin: 20px 0;
+    width: 100%;
 }
-#lastModified, #currentyear 
-{
+
+#lastModified, #currentyear {
     font-weight: bold;
 }
