@@ -1,6 +1,9 @@
-// Dynamic Footer Information
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
+const currentYear = new Date().getFullYear();
+document.getElementById('currentyear').textContent = currentYear;
+
+// Display the date the document was last modified
+document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+
 
 // Hamburger Menu Toggle
 const hamburgerBtn = document.getElementById('hamburgerBtn');
