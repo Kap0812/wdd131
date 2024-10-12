@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+    /* Larger Screens Layout */
+    nav ul {
+      display: flex;
+    }
+  
+    .temples-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Temple Album page">
+    <meta name="author" content="Diego Ortega Kapellmann">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <nav>
+                <h1>Temple Album</h1>
+                <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+                <ul>
+                  <li><a href="#" onclick="displayTemples(temples)">Home</a></li>
+                  <li><a href="#" onclick="filterOldTemples()">Old</a></li>
+                  <li><a href="#" onclick="filterNewTemples()">New</a></li>
+                  <li><a href="#" onclick="filterLargeTemples()">Large</a></li>
+                  <li><a href="#" onclick="filterSmallTemples()">Small</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+      <h2>Home</h2>
+        <div class="temples-grid">
+            
+        </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> &#128640; Diego Ortega Kapellmann &#128640; Toluca, Mexico</p>
+      <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
