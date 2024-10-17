@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+body{
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+header{
+    background-color: #410D73;
+    color: #DDD2D6;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    font-size: larger;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #32243f;
+    border-radius: 10px;
+    color: #DDD2D6;
+}
+label, legend {
+    font-weight: bold;
+}
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background-color: #324270;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+footer{
+    text-align: center;
+    background-color: #410D73;
+    color: #DDD2D6;
+    margin-bottom: 20px;
+}
