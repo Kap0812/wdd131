@@ -1,34 +1,93 @@
-@media(max-width: 750px){
-    .hamburger{
-        display: block;
-    }
-    .hamburger.active.bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active.bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active.bar:nth-child(3){
-        transform: translateX(-8px) rotate(-45deg);
-    }
-    
-    .navmenu{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #0B006C;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
+/* Base styles (mobile-first) */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #0B006C;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #0B006C;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #0B006C;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Overlay to darken images for readability */
+.grid-item {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.grid-item img {
+    opacity: 0.7; /* Makes image slightly transparent */
+}
+
+.grid-item h3, .grid-item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensures text is above the image */
+}
+
+/* Video */
+.video-background video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Color schema */
+#color-schema {
+    background-color: #0B006C;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Typography */
+#typography p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Responsive design for mobile-first */
+@media (min-width: 768px) {
+    body {
+        padding: 20px;
     }
 
-    .navitem{
-        margin: 16px 0;
+    section {
+        max-width: 800px;
+        margin: 0 auto;
     }
 
-    .navmenu.active{
-        left: 0;
+    /* Adjust layout of images and text */
+    .grid-item {
+        width: 30%;
+        display: inline-block;
     }
 }
+
