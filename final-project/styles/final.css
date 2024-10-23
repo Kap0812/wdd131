@@ -1,0 +1,26 @@
+@media(max-width: 750px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active.bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active.bar:nth-child(3){
+        transform: translateX(-8px) rotate(-45deg);
+    }
+    
+    .navmenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0B006C;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+}
